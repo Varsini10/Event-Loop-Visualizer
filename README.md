@@ -64,7 +64,7 @@ This project was inspired by the need to **demystify the JavaScript Event Loop**
 ## 📷 Preview
 
 ![Event Loop Preview](https://github.com/Varsini10/Event-Loop-Visualizer/blob/main/Website%20image%201.png) 
-![Event Loop Preview](https://github.com/Varsini10/Event-Loop-Visualizer/blob/main/Website%20image%201.png) 
+![Event Loop Preview](https://github.com/Varsini10/Event-Loop-Visualizer/blob/main/Website%20image%202.png) 
 
 
 
