@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Event Loop Visualizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>JS Event Loop Visualizer</h1>
+
+  <p><strong>Note:</strong> Microtasks are executed before Task Queue after the Call Stack is empty.</p>
+
+  <div class="slider-group">
+  <label for="speedSlider">Execution Speed:</label>
+  <input type="range" id="speedSlider" min="500" max="3000" step="250" value="2250" />
+  <span id="speedLabel">2250ms</span>
+  </div>
+
+  <div class="container">
+    <div class="section" id="callStack">
+      <h2>Call Stack</h2>
+      <ul id="callStackList"></ul>
+    </div>
+    <div class="section" id="taskQueue">
+      <h2>Task Queue</h2>
+      <ul id="taskQueueList"></ul>
+    </div>
+    <div class="section" id="microtaskQueue">
+      <h2>Microtask Queue</h2>
+      <ul id="microtaskQueueList"></ul>
+    </div>
+  </div>
+
+  <button onclick="simulateEventLoop()">Run Simulation</button>
+  <button onclick="clearQueues()">Clear</button>
+  <script src="script.js"></script>
+</body>
+</html>
