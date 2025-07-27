@@ -1,64 +1,69 @@
-# Event-Loop-Visualizer
+# 🔁 JS Event Loop Visualizer
 
-🔁 JS Event Loop Visualizer
-An interactive JavaScript Event Loop Visualizer that helps users understand the execution flow of the Call Stack, Task Queue, and Microtask Queue using an animated and educational interface.
+An interactive visualizer designed to simplify and animate the internal workings of JavaScript's **Event Loop**, including the **Call Stack**, **Task Queue**, and **Microtask Queue**. This tool allows learners and developers to visually comprehend how JavaScript handles asynchronous operations.
 
-**📌 Features**
 
-🎯 Visual simulation of JavaScript's event loop.
 
-🧠 Differentiates between Call Stack, Task Queue, and Microtask Queue.
+## 📌 Features
 
-⏱️ Adjustable execution speed with slider control.
+- 🎯 Real-time simulation of JavaScript's Event Loop
+- 🧠 Clear differentiation between Call Stack, Task Queue, and Microtask Queue
+- ⏱️ Adjustable execution speed via a slider
+- 🌈 Animated task execution with color-coded labels and glowing border effects
+- 📱 Fully responsive and optimized for mobile devices
+- 🧼 Clear button to fully reset the simulation and timers
 
-🌈 Animated task execution with visual labels and glow effects.
 
-📱 Fully responsive and mobile-friendly layout.
+## ⚙️ Built With
 
-🧼 "Clear" button to reset simulation.
+### HTML5
 
-**⚙️ Built With**
+### CSS3
+- Custom Theme Colors:
+  - `#273F4F` – Deep Stack Blue
+  - `#447D9B` – Process Blue
+  - `#D7D7D7` – Neutral Light
+- Glow effects and fade transitions
+- Responsive design via media queries
 
-**HTML5**
+### JavaScript
+- DOM manipulation and event handling
+- Task simulation using:
+  - `setTimeout` (Task Queue)
+  - `Promise.then()` and `queueMicrotask()` (Microtask Queue)
+- Reset, run, and timing logic for seamless interaction
 
-**CSS3**
-  
-  Custom colors: #273F4F, #447D9B, #D7D7D7
-  
-  Glow and fade effects
-  
-  Responsive media queries
 
-**JavaScript**
 
-  DOM manipulation
-  
-  Event handling
-  
-  Task simulation logic using setTimeout, Promise.then, queueMicrotask, etc.
+## 📝 Usage
 
-**📝 Usage**
-  
-Click Run Simulation to animate the event loop execution.
+1. Click **"Run Simulation"** to start.
+2. Adjust the **Speed Slider** to change execution pace.
+3. Observe the **execution order**:
+   - Microtasks are prioritized over Tasks.
+   - Tasks execute once the Call Stack is empty.
+4. Click **"Clear"** to fully reset the simulation and interface.
 
-Use the slider to control speed.
 
-Press Clear to reset the visual state and timers.
 
-Observe how Microtasks run before Task Queue once the Call Stack is clear.
+## 📄 Concepts Demonstrated
 
-**📄 Concepts Demonstrated**
+- JavaScript's single-threaded concurrency model
+- Call Stack behavior and function execution order
+- Difference between Microtasks and Tasks
+- Event loop cycles and how asynchronous code executes
 
-This visualizer helps demonstrate:
 
-JavaScript concurrency model
 
-Call Stack lifecycle
+## 💡 Inspiration
 
-Microtask vs Task scheduling
+This project was inspired by the need to **demystify the JavaScript Event Loop**, especially for visual learners. By animating each step of execution, users gain a clearer understanding of how JavaScript processes tasks, making asynchronous behavior more intuitive and less abstract.
 
-Execution order and priorities
 
-**💡 Inspiration**
 
-This project was created to simplify one of the most confusing JavaScript concepts — the Event Loop — through visualization and interaction.
+## 📷 Preview
+
+![Event Loop Preview](./assets/event-loop-preview.png) <!-- Replace this with your actual image path -->
+
+
+
